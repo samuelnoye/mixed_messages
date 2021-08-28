@@ -10,16 +10,16 @@ const husband = [`Since the time I've met you`, `Every day with you is a wonderf
     `her belt size is "equator".`
 ]
 
-const wife = [`she brought a spoon to the Super Bowl.`, `she put lipstick on her forehead to make up her mind.`,
-    `when they said, "Order in the court," she asked for fries and a shake.`, `she got hit by a parked car.`,
-    `when I told her that she lost her mind, she went looking for it`, `she went to the dentist to get a Bluetooth.`,
-    `she took a ruler to bed to see how long she slept.`, `she got locked in the grocery store and starved to death.`,
+const wife = [`If I could give you one thing in life.`, `I'd give you the ability to see yourself through my eyes.`,
+    `Only then would you realize how special you are to me.`, `she got hit by a parked car.`,
+    `when I told her that she lost her mind, she went looking for it`, `What on earth did I think about all the time before you?.`,
+    `she took a ruler to bed to see how long she slept.`, `If you were a movie, I'd watch you over and over again.`,
     `when I said, "Drinks on the house," she got a ladder.`, `it takes her two hours to watch 60 Minutes.`,
     `she put airbags on her computer in case it crashed.`
 ]
 
-const child = [`she threw a boomerang and it refused to come back.`, `, she made a blind kid cry.`,
-        `her portraits hang themselves.`, `her birth certificate is an apology letter.`, `the government moved Halloween to her birthday`
+const child = [`Stop making me think about you! I'm busy.`, `If nothing lasts forever, can I be your nothing?`,
+        `I couldn't ignore you even if I wanted to.`, `Thank you for always making me feel like the most beautiful woman in the world .`, `the government moved Halloween to her birthday`
     ]
    
 
