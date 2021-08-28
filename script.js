@@ -23,9 +23,9 @@ const child = [`she threw a boomerang and it refused to come back.`, `, she made
     ]
    
 
-let returnedJoke = ''
+let returnedMessage = ''
 
-//   let optionIndex = generateRandomNumber(fat.length)
+
 
 const readline = require('readline').createInterface({
     input: process.stdin,
@@ -40,23 +40,23 @@ readline.question('Which Dumbo description do you want to see? \nEnter "husband"
             case 'husband':
                 {
                     optionIndex = generateRandomNumber(husband.length)
-                    returnedJoke = `\nDumbo's so ${choice}, ${husband[optionIndex]}`
+                    returnedMessage = `\nDumbo's so ${choice}, ${husband[optionIndex]}`
                 }
                 break
             case 'wife':
                 {
                     optionIndex = generateRandomNumber(wife.length)
-                    returnedJoke = `\nDumbo's so ${choice}, ${wife[optionIndex]}`
+                    returnedMessage = `\nDumbo's so ${choice}, ${wife[optionIndex]}`
                 }
                 break
             case 'child':
                 {
                     optionIndex = generateRandomNumber(child.length)
-                    returnedJoke = `\nDumbo's so ${choice}, ${child[optionIndex]}`
+                    returnedMessage = `\nDumbo's so ${choice}, ${child[optionIndex]}`
                 }
                 break
             default:
-                returnedJoke = `Choose message for 'Husband', 'Wife' or 'Child'`
+                returnedMessage = `Choose message for 'Husband', 'Wife' or 'Child'`
                 break
         }
 
@@ -65,7 +65,7 @@ readline.question('Which Dumbo description do you want to see? \nEnter "husband"
             console.log(logged)
         }
 
-        logDumboDesc(returnedJoke)
+        logDumboDesc(returnedMessage)
 
         readline.close();
     });
