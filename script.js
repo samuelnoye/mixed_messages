@@ -3,14 +3,14 @@ function generateRandomNumber(num) {
     return Math.floor(Math.random() * num)
 }
 
-//const yoMama = [
-const fat = [`she can't even jump to a conclusion.`, `it took me two buses and a train to get to her good side.`,
-    `when she goes camping, the bears hide their food`, `she stepped on a scale and it said: "To be continued.`,
+
+const husband = [`Since the time I've met you`, `Every day with you is a wonderful addition to my life's journey.`,
+    `laugh a little harder and smile all the more.`, `Just when I think that it is impossible to love you any more than I already do, you prove me wrong.`,
     `I swerved to miss her in my car and ran out of gas.`, `when she wears high heels, she strikes oil`,
     `her belt size is "equator".`
 ]
 
-const stupid = [`she brought a spoon to the Super Bowl.`, `she put lipstick on her forehead to make up her mind.`,
+const wife = [`she brought a spoon to the Super Bowl.`, `she put lipstick on her forehead to make up her mind.`,
     `when they said, "Order in the court," she asked for fries and a shake.`, `she got hit by a parked car.`,
     `when I told her that she lost her mind, she went looking for it`, `she went to the dentist to get a Bluetooth.`,
     `she took a ruler to bed to see how long she slept.`, `she got locked in the grocery store and starved to death.`,
@@ -18,10 +18,10 @@ const stupid = [`she brought a spoon to the Super Bowl.`, `she put lipstick on h
     `she put airbags on her computer in case it crashed.`
 ]
 
-const ugly = [`she threw a boomerang and it refused to come back.`, `, she made a blind kid cry.`,
+const child = [`she threw a boomerang and it refused to come back.`, `, she made a blind kid cry.`,
         `her portraits hang themselves.`, `her birth certificate is an apology letter.`, `the government moved Halloween to her birthday`
     ]
-    // ]
+   
 
 let returnedJoke = ''
 
@@ -32,36 +32,36 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question('Which Dumbo description do you want to see? \nEnter "fat","stupid" or "ugly": ',
+readline.question('Which Dumbo description do you want to see? \nEnter "husband","wife" or "child": ',
     choice => {
 
         let optionIndex = 0
         switch (choice) {
-            case 'fat':
+            case 'husband':
                 {
-                    optionIndex = generateRandomNumber(fat.length)
-                    returnedJoke = `\nDumbo's so ${choice}, ${fat[optionIndex]}`
+                    optionIndex = generateRandomNumber(husband.length)
+                    returnedJoke = `\nDumbo's so ${choice}, ${husband[optionIndex]}`
                 }
                 break
-            case 'stupid':
+            case 'wife':
                 {
-                    optionIndex = generateRandomNumber(stupid.length)
-                    returnedJoke = `\nDumbo's so ${choice}, ${stupid[optionIndex]}`
+                    optionIndex = generateRandomNumber(wife.length)
+                    returnedJoke = `\nDumbo's so ${choice}, ${wife[optionIndex]}`
                 }
                 break
-            case 'ugly':
+            case 'child':
                 {
-                    optionIndex = generateRandomNumber(ugly.length)
-                    returnedJoke = `\nDumbo's so ${choice}, ${ugly[optionIndex]}`
+                    optionIndex = generateRandomNumber(child.length)
+                    returnedJoke = `\nDumbo's so ${choice}, ${child[optionIndex]}`
                 }
                 break
             default:
-                returnedJoke = `Enter 'fat', 'stupid' or 'ugly'`
+                returnedJoke = `Choose message for 'Husband', 'Wife' or 'Child'`
                 break
         }
 
-        function logDumboDesc(joke) {
-            const logged = joke
+        function logDumboDesc(message) {
+            const logged = message
             console.log(logged)
         }
 
